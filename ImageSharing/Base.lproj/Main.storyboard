@@ -19,7 +19,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xMX-j5-Qzu">
                                 <rect key="frame" x="50" y="223.33333333333334" width="293" height="34.000000000000028"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UG3-5i-fhG">
                                 <rect key="frame" x="50" y="307.33333333333331" width="293" height="34"/>
@@ -150,7 +150,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ULy-pT-bzV">
             <objects>
-                <tabBarController id="MYK-2L-nZm" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBar" id="MYK-2L-nZm" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nwY-np-rbB"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kJ3-dd-5VP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>

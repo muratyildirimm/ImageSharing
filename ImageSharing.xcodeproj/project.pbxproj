@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130507832A043CA000BC4F1B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130507822A043CA000BC4F1B /* Alert.swift */; };
 		13CB3EE52A03DDB0003DA624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */; };
 		13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */; };
 		13CB3EE92A03DDB0003DA624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE82A03DDB0003DA624 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130507822A043CA000BC4F1B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		13CB3EE12A03DDB0003DA624 /* ImageSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130507802A043C2600BC4F1B /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				13CB3F0D2A03F478003DA624 /* SettingsViewController.swift */,
+				13CB3F0B2A03F468003DA624 /* UploadViewController.swift */,
+				13CB3F092A03F453003DA624 /* FeedViewController.swift */,
+				13CB3EE82A03DDB0003DA624 /* ViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		130507812A043C8C00BC4F1B /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				130507822A043CA000BC4F1B /* Alert.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		13CB3ED82A03DDB0003DA624 = {
 			isa = PBXGroup;
 			children = (
@@ -78,17 +99,15 @@
 		13CB3EE32A03DDB0003DA624 /* ImageSharing */ = {
 			isa = PBXGroup;
 			children = (
-				13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */,
+				130507812A043C8C00BC4F1B /* Operations */,
 				13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */,
-				13CB3EE82A03DDB0003DA624 /* ViewController.swift */,
+				13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */,
+				130507802A043C2600BC4F1B /* Scene */,
 				13CB3EEA2A03DDB0003DA624 /* Main.storyboard */,
 				13CB3EED2A03DDB1003DA624 /* Assets.xcassets */,
 				13CB3EEF2A03DDB1003DA624 /* LaunchScreen.storyboard */,
 				13CB3EF22A03DDB1003DA624 /* Info.plist */,
 				13CB3EF82A03DEFC003DA624 /* GoogleService-Info.plist */,
-				13CB3F092A03F453003DA624 /* FeedViewController.swift */,
-				13CB3F0B2A03F468003DA624 /* UploadViewController.swift */,
-				13CB3F0D2A03F478003DA624 /* SettingsViewController.swift */,
 			);
 			path = ImageSharing;
 			sourceTree = "<group>";
@@ -183,6 +202,7 @@
 				13CB3F0A2A03F453003DA624 /* FeedViewController.swift in Sources */,
 				13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */,
 				13CB3F0E2A03F478003DA624 /* SettingsViewController.swift in Sources */,
+				130507832A043CA000BC4F1B /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
