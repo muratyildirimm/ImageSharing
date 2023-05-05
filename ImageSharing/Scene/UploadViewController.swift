@@ -37,6 +37,7 @@ class UploadViewController: UIViewController {
           self.popupAlert(title: "Title", message: "Message", actionStyle: .default)
         } else {
           // We are catching the url, it may be useful for us in the future.
+          // delete this line
           imageRef.downloadURL { url, error in
             if error != nil {
               self.popupAlert(title: "Title", message: "Message", actionStyle: .default)
