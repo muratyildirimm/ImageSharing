@@ -42,7 +42,16 @@ class UploadViewController: UIViewController {
               self.popupAlert(title: "Title", message: "Message", actionStyle: .default)
             } else {
               let imageURL = url?.absoluteString
-              print(imageURL ?? "The imageURL is nil")
+              let firestoreDatabase = Firestore.firestore()
+              guard let email = Auth.auth().currentUser?.email else { return }
+              guard let comment = self.textField.text else { return }
+              guard let imageURL = imageURL else { return }
+              let firestorePost = ["email": email, "comment": comment, "imageurl": imageURL, "date": FieldValue.serverTimestamp()] as [String : Any]
+              firestoreDatabase.collection("Post").addDocument(data: firestorePost) { error in
+                if error != nil {
+                  self.popupAlert(title: "Error", message: "Firestore Upload Error", actionStyle: .default)
+                }
+              }
             }
           }
         }
