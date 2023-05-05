@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130507832A043CA000BC4F1B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130507822A043CA000BC4F1B /* Alert.swift */; };
+		13296EE12A0514C900B08224 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13296EE02A0514C900B08224 /* Alert.swift */; };
 		13CB3EE52A03DDB0003DA624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */; };
 		13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */; };
 		13CB3EE92A03DDB0003DA624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE82A03DDB0003DA624 /* ViewController.swift */; };
@@ -28,7 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		130507822A043CA000BC4F1B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		13296EE02A0514C900B08224 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		13CB3EE12A03DDB0003DA624 /* ImageSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,12 +72,12 @@
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		130507812A043C8C00BC4F1B /* Operations */ = {
+		13296EDF2A05148300B08224 /* ErrorHandling */ = {
 			isa = PBXGroup;
 			children = (
-				130507822A043CA000BC4F1B /* Alert.swift */,
+				13296EE02A0514C900B08224 /* Alert.swift */,
 			);
-			path = Operations;
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 		13CB3ED82A03DDB0003DA624 = {
@@ -99,7 +99,7 @@
 		13CB3EE32A03DDB0003DA624 /* ImageSharing */ = {
 			isa = PBXGroup;
 			children = (
-				130507812A043C8C00BC4F1B /* Operations */,
+				13296EDF2A05148300B08224 /* ErrorHandling */,
 				13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */,
 				13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */,
 				130507802A043C2600BC4F1B /* Scene */,
@@ -202,7 +202,7 @@
 				13CB3F0A2A03F453003DA624 /* FeedViewController.swift in Sources */,
 				13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */,
 				13CB3F0E2A03F478003DA624 /* SettingsViewController.swift in Sources */,
-				130507832A043CA000BC4F1B /* Alert.swift in Sources */,
+				13296EE12A0514C900B08224 /* Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

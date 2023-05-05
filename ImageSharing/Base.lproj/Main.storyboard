@@ -89,14 +89,63 @@
                     <view key="view" contentMode="scaleToFill" id="lzy-mL-2AQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="zww-7F-pNl">
+                                <rect key="frame" x="48" y="120" width="297" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="qXy-CL-vBV"/>
+                                    <constraint firstAttribute="width" constant="297" id="zwC-T0-8iw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDx-qc-dsa">
+                                <rect key="frame" x="127.66666666666669" y="555" width="138" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Sz2-vd-fTH"/>
+                                    <constraint firstAttribute="width" constant="138" id="j27-mt-dcH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButton:" destination="iU4-8C-PKM" eventType="touchUpInside" id="8tu-Ia-FzB"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jn5-uO-uO4">
+                                <rect key="frame" x="48" y="465" width="297" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="cnx-am-z77"/>
+                                    <constraint firstAttribute="height" constant="40" id="jQq-yc-4Ri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrg-Mr-TTo">
+                                <rect key="frame" x="139" y="692" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Alert Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="nsm-gb-EAj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zww-7F-pNl" firstAttribute="centerX" secondItem="lzy-mL-2AQ" secondAttribute="centerX" id="1ku-lB-Fbn"/>
+                            <constraint firstItem="zww-7F-pNl" firstAttribute="top" secondItem="nsm-gb-EAj" secondAttribute="top" constant="120" id="5ih-A8-KV1"/>
+                            <constraint firstItem="NDx-qc-dsa" firstAttribute="centerX" secondItem="lzy-mL-2AQ" secondAttribute="centerX" id="ReA-Dd-hAj"/>
+                            <constraint firstItem="Jn5-uO-uO4" firstAttribute="top" secondItem="zww-7F-pNl" secondAttribute="bottom" constant="70" id="dDt-3j-5Tl"/>
+                            <constraint firstItem="NDx-qc-dsa" firstAttribute="top" secondItem="Jn5-uO-uO4" secondAttribute="bottom" constant="50" id="gA3-Jk-mIR"/>
+                            <constraint firstItem="Jn5-uO-uO4" firstAttribute="centerX" secondItem="lzy-mL-2AQ" secondAttribute="centerX" id="vBb-oj-QzP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up" catalog="system" id="sht-5J-rhq"/>
+                    <connections>
+                        <outlet property="imageView" destination="zww-7F-pNl" id="Ob8-bg-Pcr"/>
+                        <outlet property="textField" destination="Jn5-uO-uO4" id="8f4-po-knC"/>
+                        <outlet property="uploadButtonOutletl" destination="NDx-qc-dsa" id="NM9-nO-EXe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8l-bP-BIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1740" y="207"/>
+            <point key="canvasLocation" x="1739.6946564885495" y="206.33802816901411"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Ep7-0M-WNb">
@@ -171,6 +220,7 @@
     <resources>
         <image name="figure.walk.circle" catalog="system" width="128" height="123"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="select" width="1920" height="1920"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
