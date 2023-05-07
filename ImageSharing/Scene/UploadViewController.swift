@@ -32,12 +32,12 @@ class UploadViewController: UIViewController {
     if let data = imageView.image?.jpegData(compressionQuality: 0.5) {
       // The id of each image needs to be unique
       var imageRef = mediaFolder.child("\(uuid).jpg")
+      // burada da sadece resimleri tutmak için storage kısmına yüklüyoruz
       imageRef.putData(data,metadata: nil) { storageMetaData, error in
         if error != nil {
           self.popupAlert(title: "Title", message: "Message", actionStyle: .default)
         } else {
           // We are catching the url, it may be useful for us in the future.
-          // delete this line
           imageRef.downloadURL { url, error in
             if error != nil {
               self.popupAlert(title: "Title", message: "Message", actionStyle: .default)
@@ -47,10 +47,15 @@ class UploadViewController: UIViewController {
               guard let email = Auth.auth().currentUser?.email else { return }
               guard let comment = self.textField.text else { return }
               guard let imageURL = imageURL else { return }
+              // şurada cloud firestora yüklüyoruz
               let firestorePost = ["email": email, "comment": comment, "imageurl": imageURL, "date": FieldValue.serverTimestamp()] as [String : Any]
               firestoreDatabase.collection("Post").addDocument(data: firestorePost) { error in
                 if error != nil {
                   self.popupAlert(title: "Error", message: "Firestore Upload Error", actionStyle: .default)
+                } else {
+                  self.imageView.image = UIImage(named: "select")
+                  self.textField.text = ""
+                  self.tabBarController?.selectedIndex = 0
                 }
               }
             }

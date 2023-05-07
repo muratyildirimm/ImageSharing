@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13296EE12A0514C900B08224 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13296EE02A0514C900B08224 /* Alert.swift */; };
+		13850C362A07AD02007BEA44 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13850C352A07AD02007BEA44 /* FeedCell.swift */; };
 		13CB3EE52A03DDB0003DA624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */; };
 		13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */; };
 		13CB3EE92A03DDB0003DA624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CB3EE82A03DDB0003DA624 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		13296EE02A0514C900B08224 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		13850C352A07AD02007BEA44 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		13CB3EE12A03DDB0003DA624 /* ImageSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CB3EE42A03DDB0003DA624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CB3EE62A03DDB0003DA624 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				13CB3EEF2A03DDB1003DA624 /* LaunchScreen.storyboard */,
 				13CB3EF22A03DDB1003DA624 /* Info.plist */,
 				13CB3EF82A03DEFC003DA624 /* GoogleService-Info.plist */,
+				13850C352A07AD02007BEA44 /* FeedCell.swift */,
 			);
 			path = ImageSharing;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				13CB3EE52A03DDB0003DA624 /* AppDelegate.swift in Sources */,
 				13CB3F0A2A03F453003DA624 /* FeedViewController.swift in Sources */,
 				13CB3EE72A03DDB0003DA624 /* SceneDelegate.swift in Sources */,
+				13850C362A07AD02007BEA44 /* FeedCell.swift in Sources */,
 				13CB3F0E2A03F478003DA624 /* SettingsViewController.swift in Sources */,
 				13296EE12A0514C900B08224 /* Alert.swift in Sources */,
 			);
